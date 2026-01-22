@@ -18,7 +18,7 @@ flowchart LR
   L -->|PDF file| A
   A -->|PDF response| U
 
-  A -->|optional: POST PDF| P[External Parser Service]
+  A -->|optional: POST PDF| P[MinerU Parser Service]
   P -->|JSON result| A
   A -->|JSON response| U
 ```
