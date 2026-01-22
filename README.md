@@ -60,6 +60,12 @@ curl -F "file=@/path/to/slides.pptx" \
   "http://localhost:1888/convert_and_parse?parser_url=http://parser-host:port/file_parse"
 ```
 
+Set a default parser URL for all requests:
+```bash
+PARSER_URL="http://parser-host:port/file_parse" \
+  uvicorn app:app --host 0.0.0.0 --port 1888
+```
+
 ## Configuration
 
 Environment variables:
